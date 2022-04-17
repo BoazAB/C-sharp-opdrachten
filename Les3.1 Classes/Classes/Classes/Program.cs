@@ -4,6 +4,24 @@ namespace Classes
 {
     class Rekenmachine
     {
+        int a = 2;
+        int b = 5;
+        public int plus()
+        {
+            return (a + b);
+        }
+        public int divide()
+        {
+            return (a / b);
+        }
+        public int min()
+        {
+            return (a * b);
+        }
+    }
+}
+/*    class Rekenmachine
+    {
         static void Main(string[] args)
         {
             int rek = 2;
@@ -24,5 +42,4 @@ namespace Classes
             }
         }
 
-    }
-}
+    }*/
