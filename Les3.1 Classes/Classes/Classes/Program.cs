@@ -4,18 +4,49 @@ namespace Classes
 {
     class Rekenmachine
     {
-        int a = 2;
-        int b = 5;
+        static void Main()
+        {
+            Console.WriteLine("0 = +, 1 = /, 2 = * ");
+            string input = Console.ReadLine();
+
+            int rek = Int32.Parse(input);
+            Rekenmachine rekenmachine = new Rekenmachine();
+            switch (rek)
+            {
+                case 0:
+                    rekenmachine.plus();
+                    break;
+                case 1:
+                    rekenmachine.divide();
+                    break;
+                case 2:
+                    rekenmachine.min();
+                    break;
+                default :
+                    string pappagaay = "ik wil een koekje";
+                    int naam = Int32.Parse(pappagaay);
+                    break;
+            }
+        }
         public int plus()
         {
+            int a = 2;
+            int b = 6;
+            Console.WriteLine(a + b);
             return (a + b);
         }
         public int divide()
         {
+            int a = 2;
+            int b = 6;
+            Console.WriteLine(a / b);
             return (a / b);
         }
         public int min()
         {
+            int a = 2;
+            int b = 6;
+            Console.WriteLine(a * b);
             return (a * b);
         }
     }
