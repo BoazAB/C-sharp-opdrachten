@@ -2,25 +2,22 @@
 
 namespace Functies
 {
-    class Program
+
+    class hi
     {
-        class hi
+    
+        static void Main(string[] args)
         {
-            
+            Console.WriteLine(bannaan());
+        }
 
-            static void Main(string[] args)
-            {
-                bannaan();
-            }
+        public static int bannaan()
+        {
+            int number1 = 6;
+            int number2 = 3;
 
-            public static void bannaan()
-            {
-                int number1 = 6;
-                int number2 = 3;
-
-                Console.WriteLine(number1 + number2);
+           return (number1 + number2);
                 
-            }
         }
     }
 }
